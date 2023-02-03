@@ -1,0 +1,11 @@
+{
+  "name": "csv2json",
+  "author": "Juan Sanchez <juan.sanchez@juanleonardosanchez.com",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "csv-parser": "^3.0.0"
+  },
+  "bin": {
+    "csv2json": "./index.js"
+  }
+}
