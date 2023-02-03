@@ -16,3 +16,6 @@ The tool takes two arguments `--file` and `--output`, as follows:
 
     csv2json run -f input/ten_million.csv --output output/ten_million.json
 
+
+Start: 2023-02-03 15:30
+End: 2023-02-03 14:43 
