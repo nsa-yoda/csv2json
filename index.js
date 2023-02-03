@@ -13,13 +13,12 @@ const stream_csv = function ({file, output}) {
   
   // Create our write and read streams, pipe the readStream to csvParser to get proper KV output
   const writeStream = fs.createWriteStream(output, {encoding: "utf-8"})
-  const readStream = fs.createReadStream(file, {encoding: "utf-8"}).pipe(csvParser()) //.pipe(writeStream)
+  const readStream = fs.createReadStream(file, {encoding: "utf-8"}).pipe(csvParser())
   let separator = ""
   
   // Write our JSON array start
   writeStream.write("[")
-
-
+  
   // Begin reading chunks from the stream, output to the writeStream with a prepended separator
   readStream.on('data', chunk =>{
     writeStream.write(separator + JSON.stringify(chunk))
