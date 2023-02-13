@@ -2,7 +2,7 @@
 
 CSV2JSON for Node.js is a simple program that converts a CSV file into a JSON file
 
-Built as a test for A6
+Built as a test for Anomaly Six
 
 # Installation
 
